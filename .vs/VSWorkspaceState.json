@@ -2,7 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\API",
+    "\\API\\Controllers",
+    "\\API\\Dtos",
     "\\Core",
+    "\\Core\\Entities",
+    "\\Core\\Entities\\Identity",
     "\\Core\\Specifications"
   ],
   "SelectedNode": "\\API.sln",

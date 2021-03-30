@@ -19,7 +19,7 @@ namespace Infrastructure.Data
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
-
+        
         //Provide Custom Implimentation Which Implimented in Config folder
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
