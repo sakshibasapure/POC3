@@ -1,4 +1,3 @@
-
 using API.Helpers;
 using Core.Interfaces;
 using Infrastructure.Data;
@@ -35,8 +34,8 @@ namespace API
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
-            services.AddDbContext<StoreContext>( x => 
-                x.UseSqlServer(_config.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<StoreContext>(x =>
+               x.UseSqlServer(_config.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

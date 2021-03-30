@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\API",
     "\\Core",
-    "\\Core\\Interfaces",
-    "\\eCommerceBackend",
-    "\\eCommerceBackend\\Controllers",
-    "\\eCommerceBackend\\Properties"
+    "\\Core\\Specifications"
   ],
-  "SelectedNode": "\\eCommerceBackend.sln",
+  "SelectedNode": "\\API.sln",
   "PreviewInSolutionExplorer": false
 }

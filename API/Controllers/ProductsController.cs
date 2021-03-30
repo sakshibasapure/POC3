@@ -14,13 +14,13 @@ namespace API.Controllers
 
     [ApiController]
     [Route("api/[controller]")]
-    public class ProductsController : ControllerBase 
+    public class ProductsController : ControllerBase
     {
         private readonly IGenericRepository<Product> _productsRepo;
         private readonly IGenericRepository<Category> _categoriesRepo;
         private readonly IMapper _mapper;
 
-        public ProductsController(IGenericRepository<Product> productsRepo, 
+        public ProductsController(IGenericRepository<Product> productsRepo,
             IGenericRepository<Category> categoriesRepo, IMapper mapper)
         {
             _mapper = mapper;
@@ -43,7 +43,7 @@ namespace API.Controllers
         {
             var spec = new ProductCategoriesSpecification(id);
 
-            var product =  await _productsRepo.GetEnitityWithSpec(spec);
+            var product = await _productsRepo.GetEnitityWithSpec(spec);
 
             return Ok(_mapper.Map<Product, ProductToReturnDto>(product));
 
