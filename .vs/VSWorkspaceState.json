@@ -3,11 +3,8 @@
     "",
     "\\API",
     "\\API\\Controllers",
-    "\\API\\Dtos",
-    "\\Core",
-    "\\Core\\Entities",
-    "\\Core\\Entities\\Identity",
-    "\\Core\\Specifications"
+    "\\API\\wwwroot",
+    "\\Core"
   ],
   "SelectedNode": "\\API.sln",
   "PreviewInSolutionExplorer": false
